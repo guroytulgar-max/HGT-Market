@@ -19,12 +19,24 @@
             padding: 120px 20px;
         }
 
-        h1 {
-            font-size: 48px;
-            font-weight: 800;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+        /* HGT Logo + G Rozeti */
+        .hgt-logo {
+            font-size: 52px;
+            font-weight: 900;
+            letter-spacing: 2px;
             text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .g-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            margin: 0 4px;
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(255, 0, 120, 0.6);
+            font-weight: 900;
+            transform: translateY(-2px);
         }
 
         .subtitle {
@@ -78,7 +90,10 @@
 
 <body>
     <div class="container">
-        <h1>HGT Market</h1>
+        <h1 class="hgt-logo">
+            H<span class="g-badge">G</span>T Market
+        </h1>
+
         <div class="subtitle">Modern, renkli ve yepyeni alışveriş deneyimi yakında sizlerle.</div>
 
         <div class="card">
