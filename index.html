@@ -1,190 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HGT Market – Kurumsal Sürüm</title>
-
+    <title>HGT Market – Gücünü Birleştiren Topluluk</title>
     <style>
         body {
             margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: #0f0f0f;
+            color: #ffffff;
+            line-height: 1.6;
         }
 
-        /* HEADER */
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            backdrop-filter: blur(12px);
-            background: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            padding: 18px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: 900;
-        }
-
-        .logo .g-badge {
-            background: linear-gradient(135deg, #ff8a00, #e52e71);
-            padding: 4px 10px;
-            border-radius: 10px;
-            color: white;
-            box-shadow: 0 0 12px rgba(255, 0, 120, 0.6);
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #e52e71;
-        }
-
-        /* HERO */
-        .hero {
-            padding-top: 160px;
             text-align: center;
-            padding-bottom: 80px;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: white;
+            padding: 80px 20px 40px;
+            background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
         }
 
-        .hero h1 {
-            font-size: 64px;
-            font-weight: 900;
+        h1 {
+            font-size: 2.8rem;
             margin-bottom: 10px;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            font-weight: 700;
         }
 
-        .hero p {
-            font-size: 22px;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-
-        .hero .btn {
-            padding: 16px 34px;
-            background: linear-gradient(135deg, #ff8a00, #e52e71);
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 30px;
-            text-decoration: none;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-            transition: 0.3s;
-        }
-
-        .hero .btn:hover {
-            transform: scale(1.07);
-        }
-
-        /* FEATURES */
-        .features {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 80px 20px;
-        }
-
-        .feature-card {
-            background: white;
-            width: 300px;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-        }
-
-        .feature-card h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .feature-card p {
-            font-size: 16px;
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 300;
             opacity: 0.8;
         }
 
-        /* FOOTER */
-        footer {
-            background: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 30px;
-            margin-top: 60px;
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        footer p {
-            margin: 5px 0;
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: #ffcc00;
+            margin: 30px auto;
+        }
+
+        .sub-title {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        ul li {
+            background: #1f1f1f;
+            padding: 12px 18px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            opacity: 0.6;
+            font-size: 0.9rem;
         }
     </style>
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            H<span class="g-badge">G</span>T
-        </div>
+<header>
+    <h1>Gücünü Birleştiren Topluluk</h1>
+    <h2>A Community That Gathers Strength</h2>
+</header>
 
-        <nav>
-            <a href="#">Ana Sayfa</a>
-            <a href="#">Hakkında</a>
-            <a href="#">İletişim</a>
-        </nav>
-    </header>
+<section>
+    <p class="sub-title"><i>“Burada herkesin bir hikâyesi var… ve seninki henüz yazılmadı.”</i></p>
+    <p class="sub-title"><i>“Everyone here has a story… and yours hasn’t been written yet.”</i></p>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>HGT Market</h1>
-        <p>Modern, renkli ve global bir alışveriş deneyimi.</p>
-        <a class="btn">Hazırlanıyor...</a>
-    </section>
+    <div class="divider"></div>
 
-    <!-- FEATURES -->
-    <section class="features">
-        <div class="feature-card">
-            <h3>🚀 Hızlı</h3>
-            <p>HGT altyapısı ile yüksek performans.</p>
-        </div>
+    <h2>Topluluk Metni (TR)</h2>
+    <p>
+        Biz, aynı toprağın sesini duyan insanların buluştuğu bir yer kuruyoruz.
+        Herkes kendi emeğini getiriyor; ama ortaya çıkan şey, tek bir kişinin değil, hepimizin hikâyesi oluyor.
+        HGT Market, üreticilerin yalnız yürümediği; birbirini görünce güçlendiği bir topluluğun sessizce büyüyen kalbidir.
+        Ne sattığınızdan çok, neye inandığınız önemlidir.
+        Ve biz, bu inançtan doğan yeni bir ekonomiyi birlikte yazıyoruz.
+        Hazır mısınız? Çünkü bu yolculuk daha yeni başlıyor.
+    </p>
 
-        <div class="feature-card">
-            <h3>🎨 Modern</h3>
-            <p>Renkli, şık ve premium tasarım.</p>
-        </div>
+    <div class="divider"></div>
 
-        <div class="feature-card">
-            <h3>🔒 Güvenli</h3>
-            <p>Gelişmiş güvenlik standartları.</p>
-        </div>
-    </section>
+    <h2>Community Text (EN)</h2>
+    <p>
+        We are building a place where people who hear the same heartbeat of the land come together.
+        Everyone brings their own work, yet what emerges belongs to all of us.
+        HGT Market is the quiet heartbeat of a community where producers never walk alone and grow stronger by seeing one another.
+        It’s not about what you sell; it’s about what you believe in.
+        And together, we are shaping a new economy born from that belief.
+        Are you ready? Because this journey is only beginning.
+    </p>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 HGT Market</p>
-        <p>Tüm hakları saklıdır.</p>
-    </footer>
+    <div class="divider"></div>
+
+    <h2>Üreticiye Verilen Söz</h2>
+    <p><b>Sözümüz basit: Üretici yalnız yürümeyecek.</b></p>
+    <p><b>Our promise is simple: No producer walks alone.</b></p>
+
+    <div class="divider"></div>
+
+    <h2>Platformun Sunduğu İpuçları</h2>
+
+    <h3>Türkçe</h3>
+    <ul>
+        <li>Kendi şartlarınla satış</li>
+        <li>Topluluk gücüyle büyüme</li>
+        <li>İhale ve esnek fiyatlama seçenekleri</li>
+        <li>Güven temelli yeni ekonomi modeli</li>
+    </ul>
+
+    <h3>English</h3>
+    <ul>
+        <li>Sell on your own terms</li>
+        <li>Grow with the power of community</li>
+        <li>Auction & flexible pricing options</li>
+        <li>A trust‑driven new economy model</li>
+    </ul>
+
+</section>
+
+<footer>
+    © 2026 HGT Market – Tüm Hakları Saklıdır.
+</footer>
 
 </body>
 </html>
