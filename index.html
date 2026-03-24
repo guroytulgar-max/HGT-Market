@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HGT Market – Gücünü Birleştiren Topluluk</title>
+    <title>HGT Market – İç Panel</title>
 
     <style>
         body {
@@ -12,135 +12,73 @@
             font-family: "Segoe UI", sans-serif;
             background: #0d0d0d;
             color: #fff;
-            overflow-x: hidden;
         }
 
         /* NAVBAR */
         .navbar {
-            position: fixed;
-            top: 0;
             width: 100%;
             padding: 20px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(0,0,0,0.4);
-            backdrop-filter: blur(6px);
-            z-index: 1000;
-            transition: 0.3s;
-        }
-
-        .navbar.scrolled {
             background: rgba(0,0,0,0.85);
+            border-bottom: 1px solid #333;
         }
 
         .logo {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: bold;
             color: #ffcc00;
-            letter-spacing: 1px;
         }
 
-        .nav-links a {
-            margin-left: 25px;
-            color: #fff;
+        .back a {
+            color: #ffcc00;
             text-decoration: none;
             font-size: 1rem;
-            opacity: 0.8;
         }
 
-        .nav-links a:hover {
-            opacity: 1;
-            color: #ffcc00;
-        }
-
-        /* HERO */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(135deg, #000, #1a1a1a, #333);
-            background-size: 300% 300%;
-            animation: gradientMove 12s ease infinite;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            animation: fadeUp 1.5s ease;
-        }
-
-        .hero h2 {
-            font-size: 1.3rem;
-            opacity: 0.8;
-            margin-bottom: 30px;
-            animation: fadeUp 2s ease;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            opacity: 0.9;
-            line-height: 1.6;
-            animation: fadeUp 2.5s ease;
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(25px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .divider {
-            width: 90px;
-            height: 3px;
-            background: #ffcc00;
-            margin: 40px auto;
-        }
-
-        /* CONTENT */
-        section {
-            max-width: 900px;
+        /* MAIN */
+        .container {
+            max-width: 1000px;
             margin: 60px auto;
             padding: 0 20px;
-            opacity: 0;
-            transform: translateY(40px);
-            transition: 1s ease;
+            text-align: center;
         }
 
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        h3 {
-            font-size: 1.6rem;
+        h1 {
+            font-size: 2.2rem;
             margin-bottom: 10px;
-            color: #ffcc00;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
         }
 
-        ul li {
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
             background: #1a1a1a;
-            padding: 12px 18px;
-            margin-bottom: 10px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 10px;
             border-left: 4px solid #ffcc00;
+            text-align: left;
+        }
+
+        .card h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            opacity: 0.8;
+            font-size: 0.95rem;
         }
 
         footer {
@@ -148,7 +86,6 @@
             padding: 40px;
             opacity: 0.6;
             font-size: 0.9rem;
-            border-top: 1px solid #333;
             margin-top: 60px;
         }
     </style>
@@ -157,28 +94,37 @@
 <body>
 
     <!-- NAVBAR -->
-    <div class="navbar" id="navbar">
+    <div class="navbar">
         <div class="logo">HGT Market</div>
-        <div class="nav-links">
-            <a href="#">Vizyon</a>
-            <a href="#">Hakkımızda</a>
-            <a href="#">İletişim</a>
+        <div class="back"><a href="index.html">← Ana Sayfaya Dön</a></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h1>Platform Geliştirme Aşamasında</h1>
+        <p>HGT Market’in iç paneline hoş geldiniz. Sistem aktif geliştirme sürecindedir.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Duyurular</h3>
+                <p>Yeni özellikler ve topluluk güncellemeleri burada yayınlanacak.</p>
+            </div>
+
+            <div class="card">
+                <h3>Yakında Gelecek Özellikler</h3>
+                <p>Ürün yönetimi, ihale sistemi, üretici paneli ve daha fazlası hazırlanıyor.</p>
+            </div>
+
+            <div class="card">
+                <h3>Topluluk Mesajı</h3>
+                <p>“Üretici yalnız yürümeyecek.” Bu söz, platformun temelini oluşturuyor.</p>
+            </div>
         </div>
     </div>
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Gücünü Birleştiren Topluluk</h1>
-        <h2>A Community That Gathers Strength</h2>
-        <p><i>“Burada herkesin bir hikâyesi var… ve seninki henüz yazılmadı.”</i></p>
-        <p><i>“Everyone here has a story… and yours hasn’t been written yet.”</i></p>
-    </div>
+    <footer>
+        © 2026 HGT Market – İç Panel
+    </footer>
 
-    <div class="divider"></div>
-
-    <!-- TR SECTION -->
-    <section>
-        <h3>Topluluk Metni (TR)</h3>
-        <p>
-            Biz, aynı toprağın sesini duyan insanların buluştuğu bir yer kuruyoruz.
-            Herkes kendi eme
+</body>
+</html>
