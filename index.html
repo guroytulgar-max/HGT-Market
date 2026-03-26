@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HGT ONE platformu geliştirme aşamasında. Yeni sistemler hazırlanıyor.">
     <title>HGT ONE</title>
+
     <style>
         body {
             margin: 0;
@@ -14,16 +16,26 @@
             text-align: center;
         }
 
+        /* Sağ üst köşe yazısı */
+        .top-name {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0.7;
+            letter-spacing: 0.5px;
+        }
+
         .box {
             background: #fff;
             padding: 40px;
-            margin-top: 20vh;
+            margin: 20vh auto 0;
             width: 85%;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             border-radius: 10px;
             border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         h1 {
@@ -35,9 +47,10 @@
         p {
             font-size: 16px;
             opacity: 0.8;
+            line-height: 1.5;
         }
 
-        .footer {
+        footer {
             margin-top: 50px;
             font-size: 13px;
             opacity: 0.6;
@@ -47,14 +60,19 @@
 
 <body>
 
-    <div class="box">
-        <h1>HGT ONE</h1>
-        <p>Platform geliştirme aşamasında.<br>Yeni sistemler hazırlanıyor.</p>
-    </div>
+    <!-- Sağ üst köşe -->
+    <div class="top-name">Gürsoy Tulgar</div>
 
-    <div class="footer">
+    <main>
+        <section class="box">
+            <h1>HGT ONE</h1>
+            <p>Platform geliştirme aşamasında.<br>Yeni sistemler hazırlanıyor.</p>
+        </section>
+    </main>
+
+    <footer>
         © 2026 HGT ONE
-    </div>
+    </footer>
 
 </body>
 </html>
